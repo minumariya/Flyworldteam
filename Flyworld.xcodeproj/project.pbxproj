@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		422188F8F7BB6C97670D9C57 /* Pods_Flyworld.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E573F3C51B0590863174430 /* Pods_Flyworld.framework */; };
 		7BF99CC020086F3A00D45CF6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BF99CBF20086F3A00D45CF6 /* AppDelegate.swift */; };
 		7BF99CC220086F3A00D45CF6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BF99CC120086F3A00D45CF6 /* ViewController.swift */; };
 		7BF99CC520086F3A00D45CF6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BF99CC320086F3A00D45CF6 /* Main.storyboard */; };
@@ -24,6 +25,9 @@
 		7BF99CC920086F3A00D45CF6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7BF99CCC20086F3A00D45CF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7BF99CCE20086F3A00D45CF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7E573F3C51B0590863174430 /* Pods_Flyworld.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Flyworld.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2F91ECF76D75E720D47E5DB /* Pods-Flyworld.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flyworld.release.xcconfig"; path = "Pods/Target Support Files/Pods-Flyworld/Pods-Flyworld.release.xcconfig"; sourceTree = "<group>"; };
+		B8051D0F63DC348A3FB7CA2F /* Pods-Flyworld.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flyworld.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Flyworld/Pods-Flyworld.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				422188F8F7BB6C97670D9C57 /* Pods_Flyworld.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E505B30E1A6F6B077D8549A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B8051D0F63DC348A3FB7CA2F /* Pods-Flyworld.debug.xcconfig */,
+				B2F91ECF76D75E720D47E5DB /* Pods-Flyworld.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		7BF99CB320086F3A00D45CF6 = {
 			isa = PBXGroup;
 			children = (
 				7BF99CBE20086F3A00D45CF6 /* Flyworld */,
 				7BF99CBD20086F3A00D45CF6 /* Products */,
+				0E505B30E1A6F6B077D8549A /* Pods */,
+				C7A9D7842FA109A555C2EB21 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +83,14 @@
 			path = Flyworld;
 			sourceTree = "<group>";
 		};
+		C7A9D7842FA109A555C2EB21 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7E573F3C51B0590863174430 /* Pods_Flyworld.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7BF99CD120086F3A00D45CF6 /* Build configuration list for PBXNativeTarget "Flyworld" */;
 			buildPhases = (
+				84A6A918AD6D0CD3195CEB34 /* [CP] Check Pods Manifest.lock */,
 				7BF99CB820086F3A00D45CF6 /* Sources */,
 				7BF99CB920086F3A00D45CF6 /* Frameworks */,
 				7BF99CBA20086F3A00D45CF6 /* Resources */,
+				6FB7D453ACE7D0CE60B26D97 /* [CP] Embed Pods Frameworks */,
+				F41DFDD0F52F17430EE167B1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -133,6 +160,64 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6FB7D453ACE7D0CE60B26D97 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Flyworld/Pods-Flyworld-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Flyworld/Pods-Flyworld-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		84A6A918AD6D0CD3195CEB34 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Flyworld-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F41DFDD0F52F17430EE167B1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Flyworld/Pods-Flyworld-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7BF99CB820086F3A00D45CF6 /* Sources */ = {
@@ -276,6 +361,7 @@
 		};
 		7BF99CD220086F3A00D45CF6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8051D0F63DC348A3FB7CA2F /* Pods-Flyworld.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -291,6 +377,7 @@
 		};
 		7BF99CD320086F3A00D45CF6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B2F91ECF76D75E720D47E5DB /* Pods-Flyworld.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
